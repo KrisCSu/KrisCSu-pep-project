@@ -12,6 +12,11 @@ import Model.Account;
 import Util.ConnectionUtil;
 
 public class AccountDAO {
+    /**
+     * Retrieves all accounts from the account table in the database.
+     *
+     * @return a List of Account objects containing all accounts in the database.
+     */
     public List<Account> getAllAccounts() {
         Connection conn = ConnectionUtil.getConnection();
         List<Account> accounts = new ArrayList<>();
